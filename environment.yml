@@ -1,0 +1,30 @@
+# CAFM-DTA environment: exact versions used to train and evaluate all reported
+# models (Linux x86_64, CUDA 12.8, Python 3.12). The complete package list of
+# the training machine is recorded in requirements_frozen.txt.
+#
+#   conda env create -f environment.yml
+#   conda activate cafm-dta
+name: cafm-dta
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12.3
+  - pip
+  - pip:
+      - --extra-index-url https://download.pytorch.org/whl/cu128
+      - --find-links https://data.pyg.org/whl/torch-2.8.0+cu128.html
+      - torch==2.8.0+cu128
+      - torch-geometric==2.8.0.post1
+      - torch-scatter==2.1.2+pt28cu128
+      - torch-sparse==0.6.18+pt28cu128
+      - fair-esm==2.0.0
+      - rdkit==2026.3.5
+      - biopython==1.88
+      - numpy==2.3.2
+      - pandas==2.3.3
+      - scipy==1.18.1
+      - scikit-learn==1.9.0
+      - lifelines==0.30.3
+      - matplotlib==3.10.5
+      - reprint==0.6.0
+      - tqdm==4.66.2

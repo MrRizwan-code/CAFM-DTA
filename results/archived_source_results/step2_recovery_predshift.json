@@ -1,0 +1,26 @@
+[
+  {
+    "arm": "KIP00",
+    "injected": 0.0,
+    "mean_ki_pred": 6.9642,
+    "recovered": 0.0
+  },
+  {
+    "arm": "KIP05",
+    "injected": 0.5,
+    "mean_ki_pred": 7.380417346954346,
+    "recovered": 0.4162173271179199
+  },
+  {
+    "arm": "KIP10",
+    "injected": 1.0,
+    "mean_ki_pred": 7.820329666137695,
+    "recovered": 0.8561296463012695
+  },
+  {
+    "arm": "KIP20",
+    "injected": 2.0,
+    "mean_ki_pred": 8.755361557006836,
+    "recovered": 1.7911615371704102
+  }
+]

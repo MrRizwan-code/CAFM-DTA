@@ -1,0 +1,8 @@
+{
+  "model": "DeepDTA",
+  "split": "cold_ligand",
+  "pearson": 0.7004,
+  "rmse": 0.9783,
+  "epochs_trained": "to convergence (early stop ~54)",
+  "params": 1968641
+}

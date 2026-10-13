@@ -1,0 +1,30 @@
+# Large tensors and model weights -> Zenodo, not git
+# (also excludes PSICHIC's own trained_weights/*.pt; get those from upstream PSICHIC)
+*.pt
+runs/
+result/
+
+# Large training splits -> Zenodo
+# (data/splits/ds2/train.csv is small and IS included)
+data/splits/primary/train.csv
+data/splits/kras_unseen/train.csv
+data/splits/cold/train.csv
+data/splits/ic50only/
+data/splits/kip*/
+
+# Archives
+*.zip
+
+# Pre-modification backups and working notes - do not publish
+*.bak_precondition
+FINAL_STEPS.md
+
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+
+# OS
+.DS_Store
+Thumbs.db

@@ -1,0 +1,134 @@
+[
+  {
+    "figure": "Figure_1_architecture",
+    "pixels": [
+      7200,
+      6000
+    ],
+    "dpi": [
+      599.9988,
+      599.9988
+    ]
+  },
+  {
+    "figure": "Figure_1b_condition_variants",
+    "pixels": [
+      6600,
+      2760
+    ],
+    "dpi": [
+      599.9988,
+      599.9988
+    ]
+  },
+  {
+    "figure": "Figure_2_primary_ablation",
+    "pixels": [
+      6600,
+      4800
+    ],
+    "dpi": [
+      599.9988,
+      599.9988
+    ]
+  },
+  {
+    "figure": "Figure_3_measurement_disagreement",
+    "pixels": [
+      6600,
+      4800
+    ],
+    "dpi": [
+      599.9988,
+      599.9988
+    ]
+  },
+  {
+    "figure": "Figure_4_condition_parameters",
+    "pixels": [
+      6600,
+      2940
+    ],
+    "dpi": [
+      599.9988,
+      599.9988
+    ]
+  },
+  {
+    "figure": "Figure_5_intervention",
+    "pixels": [
+      4500,
+      3600
+    ],
+    "dpi": [
+      599.9988,
+      599.9988
+    ]
+  },
+  {
+    "figure": "Figure_6_dataset_comparison",
+    "pixels": [
+      6000,
+      4500
+    ],
+    "dpi": [
+      599.9988,
+      599.9988
+    ]
+  },
+  {
+    "figure": "Figure_7_cold_ligand",
+    "pixels": [
+      6600,
+      3000
+    ],
+    "dpi": [
+      599.9988,
+      599.9988
+    ]
+  },
+  {
+    "figure": "Figure_S1_measurement_type",
+    "pixels": [
+      4200,
+      3000
+    ],
+    "dpi": [
+      599.9988,
+      599.9988
+    ]
+  },
+  {
+    "figure": "Figure_S2_targets",
+    "pixels": [
+      7200,
+      4200
+    ],
+    "dpi": [
+      599.9988,
+      599.9988
+    ]
+  },
+  {
+    "figure": "Figure_S3_applicability",
+    "pixels": [
+      6600,
+      3000
+    ],
+    "dpi": [
+      599.9988,
+      599.9988
+    ]
+  },
+  {
+    "figure": "Figure_S4_calibration",
+    "pixels": [
+      6600,
+      3000
+    ],
+    "dpi": [
+      599.9988,
+      599.9988
+    ]
+  }
+]

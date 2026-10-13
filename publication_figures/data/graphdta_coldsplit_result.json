@@ -1,0 +1,8 @@
+{
+  "model": "GraphDTA",
+  "split": "cold_ligand",
+  "pearson": 0.7425,
+  "rmse": 0.8998,
+  "params": 1078593,
+  "epochs_trained": "to convergence (early stop)"
+}

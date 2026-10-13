@@ -1,0 +1,35 @@
+CAFM-DTA
+Condition-Aware Feature Modulation for Drug-Target Affinity prediction
+
+This product includes software developed as part of the PSICHIC project
+(https://github.com/huankoh/PSICHIC), licensed under the Apache License,
+Version 2.0.
+
+The PSICHIC source code is redistributed here in modified form, as
+permitted by that license. A copy of the license is in the LICENSE file.
+PSICHIC's original README is preserved as README_PSICHIC.md.
+
+FILES MODIFIED FROM THE ORIGINAL PSICHIC RELEASE
+    main.py
+    models/net.py
+    utils/dataset.py
+    utils/trainer.py
+    utils/utils.py
+
+FILES ADDED BY THIS WORK
+    models/condition_encoder.py
+    utils/condition_map.py
+    analysis/          (all files)
+    scripts/           (all files)
+    data/              (all files)
+    logs/              (training logs from the reported runs)
+    results/           (frozen metrics and predictions from the reported runs)
+    README.md, NOTICE, .gitignore, environment.yml, requirements_frozen.txt
+
+FILES REMOVED FROM THE ORIGINAL PSICHIC RELEASE
+    environment_gpu.yml, environment_cpu.yml, environment_osx.yml
+                       (replaced by environment.yml)
+    trained_weights/   (pretrained model weight files, *.pt; available
+                       from the upstream PSICHIC repository)
+
+All other files are unmodified from the original PSICHIC release.
