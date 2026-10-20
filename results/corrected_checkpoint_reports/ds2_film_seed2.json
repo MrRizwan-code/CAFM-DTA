@@ -1,0 +1,251 @@
+{
+  "dataset": "ds2",
+  "mode": "film",
+  "seed": 2,
+  "probe_only": false,
+  "full_test_rows": 1937,
+  "training_performed": false,
+  "parameter_count": 5931897,
+  "paths": {
+    "test_csv": "FULL_RELEASE/07_Reproducibility/data_splits/ds2/test.csv",
+    "checkpoint": "FULL_RELEASE/08_Audit_Evidence/archived_runs/ds2_allseeds_15ep/DS2_FILM_SEED2_15EP/save_model_seed2/model.pt",
+    "configuration": "FULL_RELEASE/08_Audit_Evidence/archived_runs/ds2_allseeds_15ep/DS2_FILM_SEED2_15EP/save_model_seed2/config.json",
+    "degrees": "FULL_RELEASE/08_Audit_Evidence/archived_runs/ds2_allseeds_15ep/DS2_FILM_SEED2_15EP/save_model_seed2/degree.pt",
+    "condition_maps": "FULL_RELEASE/08_Audit_Evidence/archived_runs/ds2_allseeds_15ep/DS2_FILM_SEED2_15EP/condition_maps.json",
+    "training_log": "FULL_RELEASE/08_Audit_Evidence/archived_runs/ds2_allseeds_15ep/DS2_FILM_SEED2_15EP/full_result-2.txt",
+    "protein_cache": "FULL_RELEASE/07_Reproducibility/graph_caches/ds2_recreated_2026-10-19/protein.pt",
+    "ligand_cache": "FULL_RELEASE/07_Reproducibility/graph_caches/ds2_recreated_2026-10-19/ligand.pt",
+    "exporter_source": "FULL_RELEASE/01_Source_Code/CAFM-DTA/utils/utils.py",
+    "condition_encoder_source": "FULL_RELEASE/01_Source_Code/CAFM-DTA/models/condition_encoder.py",
+    "model_source": "FULL_RELEASE/01_Source_Code/CAFM-DTA/models/net.py",
+    "dataset_source": "FULL_RELEASE/01_Source_Code/CAFM-DTA/utils/dataset.py",
+    "condition_map_source": "FULL_RELEASE/01_Source_Code/CAFM-DTA/utils/condition_map.py"
+  },
+  "input_sha256": {
+    "test_csv": "0fbca7cec2547f07e43a9de39012a781fbc14cda6b0d6c8adccf8252d227b73d",
+    "checkpoint": "efbae26e31f3c274e90afe823d8d37a806bfec60866285b9938cc9a7854a4404",
+    "configuration": "5aea0bfbcf5c25c550b6d4763b42600918d62bd914242088b67656f29d90d380",
+    "degrees": "5f97b5baf8b11214edf42aeddfab43a312916dbd8a1031d5c327028fb1581642",
+    "condition_maps": "1545c41782cdb66129bee03fa7a3b859e52457f5f7b2f90d036e293babebd3a0",
+    "training_log": "55208be21b7d85dcdbdc560cbf464279ead4fd65fb2622aa09be62ba2fccbff0",
+    "protein_cache": "bc8dd93308b6e24b19a342687679dd3e5d1add2042392e4b5b6534ff2ce04ee8",
+    "ligand_cache": "550a06128a86076a08dc34f539698effab174d6fc90f66591b924d75822dab36",
+    "exporter_source": "8f0c597ae6a6f2b010b19e4347258dc98f3dc315236a0fa4066143c3d115a5ce",
+    "condition_encoder_source": "abdbaf862c971f4d7e06600fd8e164abf47ab6a6167cbc10049f104b22a91e24",
+    "model_source": "b7b8f6509b7f798a36518666614f76759869bc556110c6f1e74b753e5c739414",
+    "dataset_source": "8f224499f53e4e5015830ab752939eecfbd95e64177bf097dab19f313858ad6a",
+    "condition_map_source": "1d29e58d28f7a3069eb7453ff2ab5025c6193c2dade9123cdc96c33d001721e8"
+  },
+  "output_csv": "04_Evaluation_Predictions\\corrected_checkpoint_evaluations\\ds2_film_seed2_20261019T085800Z_00af815a\\test_predictions_aligned.csv",
+  "output_csv_sha256": "61b1fc3342516e29aa1064a2d979fa87d3ec5aff8a93367cfe635f9f1d55dbc3",
+  "overall": {
+    "n": 1937,
+    "pearson": 0.8411069142866738,
+    "spearman": 0.8420401294965001,
+    "rmse": 0.7639632936537487,
+    "mae": 0.5572161898999468,
+    "bias": -0.14178920435376183,
+    "ci": 0.8326080803124941
+  },
+  "slices": {
+    "multi_assay": {
+      "n": 23,
+      "pearson": 0.8758572382443907,
+      "spearman": 0.6851211909703306,
+      "rmse": 0.8389382129744529,
+      "mae": 0.6222760351429814,
+      "bias": -0.35287836622155233,
+      "ci": 0.7689243027888446
+    },
+    "single_assay": {
+      "n": 1914,
+      "pearson": 0.8411669764145882,
+      "spearman": 0.8421191073483957,
+      "rmse": 0.7630175462470755,
+      "mae": 0.5564343840271204,
+      "bias": -0.13925260522995872,
+      "ci": 0.8325865996603664
+    }
+  },
+  "per_standard_type": {
+    "AC50": {
+      "n": 9,
+      "pearson": 0.5506388878067738,
+      "spearman": 0.6390096504226938,
+      "rmse": 0.48252887238498615,
+      "mae": 0.3225885713365344,
+      "bias": 0.3057447230021161,
+      "ci": 0.9333333333333333
+    },
+    "Activity": {
+      "n": 2,
+      "pearson": -1.0,
+      "spearman": -0.9999999999999999,
+      "rmse": 0.3822292607593081,
+      "mae": 0.3205104694366452,
+      "bias": 0.3205104694366452,
+      "ci": 0.0
+    },
+    "EC50": {
+      "n": 27,
+      "pearson": 0.7202208975657421,
+      "spearman": 0.527682040404455,
+      "rmse": 0.5838635517866333,
+      "mae": 0.3660710543879756,
+      "bias": -0.27565263578626853,
+      "ci": 0.7581395348837209
+    },
+    "GI50": {
+      "n": 1,
+      "pearson": null,
+      "spearman": null,
+      "rmse": 1.0429920768737801,
+      "mae": 1.0429920768737801,
+      "bias": -1.0429920768737801,
+      "ci": null
+    },
+    "IC50": {
+      "n": 1443,
+      "pearson": 0.8201004688713869,
+      "spearman": 0.8164149048201019,
+      "rmse": 0.8154938918164909,
+      "mae": 0.6146172339253679,
+      "bias": -0.17128882796220785,
+      "ci": 0.8162341773990229
+    },
+    "Kd": {
+      "n": 142,
+      "pearson": 0.7290824333685815,
+      "spearman": 0.3949134223149718,
+      "rmse": 0.628970574736533,
+      "mae": 0.427498270384023,
+      "bias": 0.13993390139727543,
+      "ci": 0.6856197352587244
+    },
+    "Ki": {
+      "n": 311,
+      "pearson": 0.7992373032751366,
+      "spearman": 0.7378952509584183,
+      "rmse": 0.5660431664470352,
+      "mae": 0.3705677989334155,
+      "bias": -0.12939264145388085,
+      "ci": 0.8001315670084385
+    },
+    "Potency": {
+      "n": 2,
+      "pearson": -1.0,
+      "spearman": -0.9999999999999999,
+      "rmse": 1.0886647840227817,
+      "mae": 1.0062613964080813,
+      "bias": -1.0062613964080813,
+      "ci": 0.0
+    }
+  },
+  "per_target": {
+    "AKT1": {
+      "n": 518,
+      "pearson": 0.8588082324244902,
+      "spearman": 0.8526529799917024,
+      "rmse": 0.7594986901647818,
+      "mae": 0.5673089729367997,
+      "bias": -0.008217685949848367,
+      "ci": 0.8349710216296072
+    },
+    "CDK4": {
+      "n": 202,
+      "pearson": 0.8434390237690294,
+      "spearman": 0.8330825156528909,
+      "rmse": 0.8352240496034842,
+      "mae": 0.6193789792202486,
+      "bias": -0.009322406428875236,
+      "ci": 0.826632285199279
+    },
+    "ERBB2": {
+      "n": 413,
+      "pearson": 0.8181983300538715,
+      "spearman": 0.8326993362891952,
+      "rmse": 0.6770186775653253,
+      "mae": 0.4894923358206022,
+      "bias": -0.11746816789382304,
+      "ci": 0.8314608788592804
+    },
+    "MAP2K1": {
+      "n": 193,
+      "pearson": 0.8411171347744119,
+      "spearman": 0.8539874803817944,
+      "rmse": 0.7632930091718446,
+      "mae": 0.5365258372608245,
+      "bias": -0.32235520383607535,
+      "ci": 0.8329727630776058
+    },
+    "SRC": {
+      "n": 611,
+      "pearson": 0.8341848094219929,
+      "spearman": 0.8189916521901492,
+      "rmse": 0.7979597571095868,
+      "mae": 0.5804211731050681,
+      "bias": -0.2582273219837494,
+      "ci": 0.8268153077840529
+    }
+  },
+  "historical_log_reference": {
+    "epoch": 15,
+    "validation": {
+      "ci": 0.8326,
+      "classification_loss": 0.0,
+      "cluster_loss": -2.7416,
+      "mae": 0.5522,
+      "mse": 0.5677,
+      "multiclassification_loss": 0.0,
+      "ortho_loss": 0.0662,
+      "pearson": 0.8406,
+      "regression_loss": 0.5675,
+      "rm2": 0.6954,
+      "rmse": 0.7534,
+      "sd": 0.7435,
+      "spearman": 0.8411,
+      "spectral_loss": 0.0
+    },
+    "test": {
+      "ci": 0.8326,
+      "classification_loss": 0.0,
+      "cluster_loss": -2.7397,
+      "mae": 0.5572,
+      "mse": 0.5836,
+      "multiclassification_loss": 0.0,
+      "ortho_loss": 0.0666,
+      "pearson": 0.8411,
+      "regression_loss": 0.5883,
+      "rm2": 0.6903,
+      "rmse": 0.764,
+      "sd": 0.7509,
+      "spearman": 0.842,
+      "spectral_loss": 0.0
+    },
+    "qualification": "Selected from the historical log, not independently read from checkpoint metadata."
+  },
+  "comparison_with_rounded_log": {
+    "pearson": {
+      "regenerated_minus_logged": 6.914286673875836e-06,
+      "tolerance": 0.0001,
+      "within_tolerance": true
+    },
+    "rmse": {
+      "regenerated_minus_logged": -3.670634625130287e-05,
+      "tolerance": 0.0001,
+      "within_tolerance": true
+    }
+  },
+  "requires_review": false,
+  "inference_seconds": 153.82816909998655,
+  "measurements_per_second": 12.591972012232507,
+  "environment": {
+    "python": "3.12.14",
+    "platform": "Windows-11-10.0.22621-SP0",
+    "torch": "2.8.0+cpu",
+    "torch_geometric": "2.8.0.post1",
+    "device": "cpu",
+    "cpu_threads": 4
+  },
+  "qualification": "Reported checkpoint inference only. No new seed, checkpoint selection or training."
+}

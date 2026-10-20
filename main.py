@@ -71,7 +71,7 @@ parser.add_argument('--trained_model_path',type=str,default='',help='This does n
 parser.add_argument('--finetune_modules',type=list_type,default=None)
 # notebook mode?
 parser.add_argument('--nb_mode',type=bool,default=False)
-parser.add_argument('--condition_mode',type=str,default='off',choices=['off','concat','film'])
+parser.add_argument('--condition_mode',type=str,default='off',choices=['off','concat','simple_concat','film'])
 
 
 args = parser.parse_args()

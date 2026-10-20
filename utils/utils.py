@@ -258,7 +258,19 @@ def store_ligand_score(ligand_smiles, atom_types, atom_scores, ligand_path):
     
 def store_result(df, attention_dict, interaction_keys,  ligand_dict, 
                  reg_pred=None, cls_pred=None, mcls_pred=None, 
-                 result_path='', save_interpret=True):
+                 result_path='', save_interpret=True, row_positions=None):
+    if not df.index.is_unique:
+        raise ValueError('Prediction export requires a unique dataframe index.')
+    if row_positions is None:
+        if df.duplicated(['Protein', 'Ligand']).any():
+            raise ValueError('Repeated pairs require explicit row_positions.')
+    else:
+        row_positions = list(row_positions)
+        if len(row_positions) != len(interaction_keys) or len(set(row_positions)) != len(row_positions):
+            raise ValueError('Each prediction must have one distinct row position.')
+        for pos, key in zip(row_positions, interaction_keys):
+            if pos < 0 or pos >= len(df) or tuple(df.iloc[pos][['Protein', 'Ligand']]) != tuple(key):
+                raise ValueError('Prediction row does not match its protein and ligand.')
     if save_interpret:
         unbatched_residue_score = unbatch(attention_dict['residue_final_score'],attention_dict['protein_residue_index'])
         unbatched_atom_score = unbatch(attention_dict['atom_final_score'], attention_dict['drug_atom_index'])
@@ -266,7 +278,11 @@ def store_result(df, attention_dict, interaction_keys,  ligand_dict,
         unbatched_clique_layer_score = unbatch(attention_dict['clique_layer_scores'], attention_dict['drug_clique_index'])
     
     for idx, key in enumerate(interaction_keys):
-        matching_row = (df['Protein'] == key[0]) & (df['Ligand'] == key[1])
+        if row_positions is None:
+            matching_row = (df['Protein'] == key[0]) & (df['Ligand'] == key[1])
+        else:
+            matching_row = np.zeros(len(df), dtype=bool)
+            matching_row[row_positions[idx]] = True
         if reg_pred is not None:
             if 'predicted_binding_affinity' in df.columns:
                 df.loc[matching_row, 'predicted_binding_affinity'] = reg_pred[idx]
@@ -338,6 +354,20 @@ def store_result(df, attention_dict, interaction_keys,  ligand_dict,
 
 def virtual_screening(screen_df, model, data_loader, result_path, save_interpret=True, ligand_dict=None, device='cpu',
                         save_cluster=False):
+    # Export one prediction per original measurement, including repeated pairs.
+    from torch.utils.data import SequentialSampler, BatchSampler
+    if (not isinstance(data_loader.sampler, SequentialSampler)
+            or type(data_loader.batch_sampler) is not BatchSampler
+            or data_loader.drop_last):
+        raise ValueError('Prediction export requires a sequential loader with drop_last=False.')
+    pairs = getattr(data_loader.dataset, 'pairs', None)
+    columns = ['Protein', 'Ligand', 'cond_std', 'cond_assay']
+    if pairs is None or any(c not in screen_df or c not in pairs for c in columns):
+        raise ValueError('Export requires dataset rows and mapped condition columns.')
+    if not screen_df[columns].reset_index(drop=True).equals(pairs[columns].reset_index(drop=True)):
+        raise ValueError('Export dataframe and dataset must have identical measurement order.')
+    screen_df = screen_df.copy().reset_index(drop=True)
+    row_offset = 0
     if "ID" in screen_df.columns:
         # Iterate through the DataFrame check any empty pairs 
         for i, row in screen_df.iterrows():
@@ -387,6 +417,10 @@ def virtual_screening(screen_df, model, data_loader, result_path, save_interpret
 
             screen_df = store_result(screen_df, attention_dict, interaction_keys, ligand_dict, 
                                      reg_pred, cls_pred, mcls_pred, 
-                                     result_path=result_path, save_interpret = save_interpret)
+                                     result_path=result_path, save_interpret=save_interpret,
+                                     row_positions=range(row_offset, row_offset + len(interaction_keys)))
+            row_offset += len(interaction_keys)
 
+    if row_offset != len(screen_df):
+        raise ValueError('Prediction count does not match the number of measurements.')
     return screen_df

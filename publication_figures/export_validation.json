@@ -8,7 +8,8 @@
     "dpi": [
       599.9988,
       599.9988
-    ]
+    ],
+    "sha256": "5ee7afbe47bdd281bc03da53d18d4c10a5a03b90e51d2707da39eb772249998a"
   },
   {
     "figure": "Figure_1b_condition_variants",
@@ -19,7 +20,8 @@
     "dpi": [
       599.9988,
       599.9988
-    ]
+    ],
+    "sha256": "a056af77396b8993400004e2b702b6457dbde93ac454b82fd03a51ee73b01d56"
   },
   {
     "figure": "Figure_2_primary_ablation",
@@ -30,7 +32,8 @@
     "dpi": [
       599.9988,
       599.9988
-    ]
+    ],
+    "sha256": "3a6e764da958c71a05514b7821458adf2ac0834265a28e0d13ce1a790c469454"
   },
   {
     "figure": "Figure_3_measurement_disagreement",
@@ -41,7 +44,8 @@
     "dpi": [
       599.9988,
       599.9988
-    ]
+    ],
+    "sha256": "bd00b40e979ac1a9be1d5cd78dda16f459ef7f644247aec29a94ec1415b3ccdd"
   },
   {
     "figure": "Figure_4_condition_parameters",
@@ -52,7 +56,8 @@
     "dpi": [
       599.9988,
       599.9988
-    ]
+    ],
+    "sha256": "1ac61db2814bab093f0ed3ef38442c5a191b42722076d74f4d690a6046167309"
   },
   {
     "figure": "Figure_5_intervention",
@@ -63,18 +68,20 @@
     "dpi": [
       599.9988,
       599.9988
-    ]
+    ],
+    "sha256": "d3b19883dc10f990f8c07407a86ccea75a50609387747e78b608a87972fe0e84"
   },
   {
     "figure": "Figure_6_dataset_comparison",
     "pixels": [
-      6000,
-      4500
+      6300,
+      4860
     ],
     "dpi": [
       599.9988,
       599.9988
-    ]
+    ],
+    "sha256": "e93dbc44b2c573e3843baa0c4e7c761253f4512e575a7f2bb47b879603b8ac0d"
   },
   {
     "figure": "Figure_7_cold_ligand",
@@ -85,7 +92,8 @@
     "dpi": [
       599.9988,
       599.9988
-    ]
+    ],
+    "sha256": "8fc2260de57f239a954b841b52d9ed00ba5b7123b097d510a133377d40e3786b"
   },
   {
     "figure": "Figure_S1_measurement_type",
@@ -96,18 +104,20 @@
     "dpi": [
       599.9988,
       599.9988
-    ]
+    ],
+    "sha256": "192f6b653fec47c8d701749de17adf0e9d327aa31cfee84a5369e38a99c9202e"
   },
   {
     "figure": "Figure_S2_targets",
     "pixels": [
-      7200,
+      6300,
       4200
     ],
     "dpi": [
       599.9988,
       599.9988
-    ]
+    ],
+    "sha256": "59aeb7243af138c3eb8eb31e03af115d6122ec87eabd356423150bf74f54774b"
   },
   {
     "figure": "Figure_S3_applicability",
@@ -118,7 +128,8 @@
     "dpi": [
       599.9988,
       599.9988
-    ]
+    ],
+    "sha256": "d50cd28a06cc16b7c2be71ce872d652a62c90e5f59cbb6d25430feb38eaa054e"
   },
   {
     "figure": "Figure_S4_calibration",
@@ -129,6 +140,7 @@
     "dpi": [
       599.9988,
       599.9988
-    ]
+    ],
+    "sha256": "ecd104088121d31fbb90c636a2f0ef84a82d0032b8ce9c261515d769707eda57"
   }
 ]

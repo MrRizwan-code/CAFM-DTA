@@ -29,7 +29,10 @@ The original archive README refers to a two-epoch cold-ligand OFF reference and 
 
 ## Other caveats
 
-Source code preserves the original prediction-export implementation. It should not be represented as a corrected exporter until separately fixed and validated.
+This revision contains the corrected row-preserving exporter and alignment guards.
+The historical corrupted CSVs are not repaired by changing code alone. Primary EVALPATH
+predictions and the separate corrected KRAS/DS2 checkpoint evaluations are the intended
+sources; do not substitute old screening exports.
 
 Figures and reported metrics should retain their original methodological qualifications. Different datasets, seeds, checkpoints, and evaluation paths are not necessarily interchangeable.
 
@@ -38,3 +41,19 @@ The source archive identifies ChEMBL release 37 and CC BY-SA 3.0. Confirm applic
 Archived references and prior documentation may contain superseded statements. The corrected manuscript, pair-clustered bootstrap evidence, and this limitations record take precedence for the identified corrections.
 
 A final scientific consistency review, end-to-end reproduction check, and public-release permission review remain outstanding.
+
+
+## Current unresolved issues and corrected provenance
+
+- IC50-only original checkpoint/prediction/log evidence has not been recovered.
+  Historical table2_frozen.json values remain unchanged at the author's request, but
+  are not newly verified by this release. A prepared rerun has not been executed.
+- Extra matched cold-ligand seeds and output-offset/type-head controls have not been run.
+- Figure 4 is from CRC_COLD_FILM_converge, seed 1, binding assay B; see
+  results/figure4_checkpoint_provenance.json. Mean signed beta is not an effect-size test.
+- DS2 Figures 6/S2 now use row-aligned checkpoint predictions across three seeds.
+  Reconstructed DS2 graph caches are identified in the evaluation provenance; they
+  are not claimed to be recovered original caches.
+- The primary fixed five-epoch budget is not a convergence test. External baseline
+  protocols differ; do not infer controlled architectural superiority from them alone.
+- The accompanying archive still needs synchronization and reviewer access before submission.

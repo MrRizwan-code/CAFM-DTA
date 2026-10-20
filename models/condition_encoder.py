@@ -10,7 +10,7 @@ class ConditionEncoder(nn.Module):
     def __init__(self, feat_dim, num_std, num_assay, mode='off',
                  emb_dim=32, cond_hidden=64, dropout=0.1):
         super().__init__()
-        assert mode in ('off', 'concat', 'film'), f"bad mode: {mode}"
+        assert mode in ('off', 'concat', 'simple_concat', 'film'), f"bad mode: {mode}"
         self.mode = mode
         self.feat_dim = feat_dim
         if mode == 'off':
@@ -25,6 +25,8 @@ class ConditionEncoder(nn.Module):
             self.fuse = nn.Sequential(
                 nn.Linear(feat_dim + cond_hidden, feat_dim), nn.ReLU(),
                 nn.LayerNorm(feat_dim))
+        elif mode == 'simple_concat':
+            self.fuse = nn.Linear(feat_dim + cond_hidden, feat_dim)
         elif mode == 'film':
             self.to_gamma = nn.Linear(cond_hidden, feat_dim)
             self.to_beta = nn.Linear(cond_hidden, feat_dim)
@@ -40,6 +42,8 @@ class ConditionEncoder(nn.Module):
         if self.mode == 'concat':
             for m in self.fuse:
                 if hasattr(m, 'reset_parameters'): m.reset_parameters()
+        elif self.mode == 'simple_concat':
+            self.fuse.reset_parameters()
         elif self.mode == 'film':
             nn.init.zeros_(self.to_gamma.weight); nn.init.zeros_(self.to_gamma.bias)
             nn.init.zeros_(self.to_beta.weight); nn.init.zeros_(self.to_beta.bias)
@@ -49,7 +53,7 @@ class ConditionEncoder(nn.Module):
             return feat
         e = torch.cat([self.emb_std(cond_std), self.emb_assay(cond_assay)], dim=-1)
         c = self.cond_mlp(e)
-        if self.mode == 'concat':
+        if self.mode in ('concat', 'simple_concat'):
             return self.fuse(torch.cat([feat, c], dim=-1))
         gamma = 1.0 + self.to_gamma(c)
         beta = self.to_beta(c)

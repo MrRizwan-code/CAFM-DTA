@@ -1,0 +1,221 @@
+{
+  "sources": [
+    {
+      "run": [
+        "ds2",
+        "film",
+        1
+      ],
+      "report": "FULL_RELEASE/04_Evaluation_Predictions/corrected_checkpoint_evaluations/ds2_film_seed1_20261019T085510Z_84c380ba/metrics_and_provenance.json",
+      "report_sha256": "3aefdf678f5083471fc85eaced87e3f52c6a1560b594d3ed93a0e0857a3a6724",
+      "csv": "FULL_RELEASE/04_Evaluation_Predictions/corrected_checkpoint_evaluations/ds2_film_seed1_20261019T085510Z_84c380ba/test_predictions_aligned.csv",
+      "csv_sha256": "c2bfceedf53f6d7b48b914060f348fdb22c22a97a14f5c21aabc5d0f6e846cf0"
+    },
+    {
+      "run": [
+        "ds2",
+        "film",
+        2
+      ],
+      "report": "FULL_RELEASE/04_Evaluation_Predictions/corrected_checkpoint_evaluations/ds2_film_seed2_20261019T085800Z_00af815a/metrics_and_provenance.json",
+      "report_sha256": "8363b310f83fc017a68a8226d59eb8aecf3960e7d95d2d8f3ad6ecd41b18760f",
+      "csv": "FULL_RELEASE/04_Evaluation_Predictions/corrected_checkpoint_evaluations/ds2_film_seed2_20261019T085800Z_00af815a/test_predictions_aligned.csv",
+      "csv_sha256": "61b1fc3342516e29aa1064a2d979fa87d3ec5aff8a93367cfe635f9f1d55dbc3"
+    },
+    {
+      "run": [
+        "ds2",
+        "film",
+        3
+      ],
+      "report": "FULL_RELEASE/04_Evaluation_Predictions/corrected_checkpoint_evaluations/ds2_film_seed3_20261019T090050Z_2822e0ca/metrics_and_provenance.json",
+      "report_sha256": "afd3af1bfaea50261c9761cbfa92878328f7524db331696373047aedeb4be52b",
+      "csv": "FULL_RELEASE/04_Evaluation_Predictions/corrected_checkpoint_evaluations/ds2_film_seed3_20261019T090050Z_2822e0ca/test_predictions_aligned.csv",
+      "csv_sha256": "22d9aa9c8d2f19c6bc3e708832d2a043c339a0a9d7e26e5c63981148c8699efa"
+    },
+    {
+      "run": [
+        "ds2",
+        "off",
+        1
+      ],
+      "report": "FULL_RELEASE/04_Evaluation_Predictions/corrected_checkpoint_evaluations/ds2_off_seed1_20261019T084713Z_e1dfec26/metrics_and_provenance.json",
+      "report_sha256": "3e9e43049dc7f8b088ab240b9bab6ae8d7cf5dd260d5c4a291b44c77b4bf014a",
+      "csv": "FULL_RELEASE/04_Evaluation_Predictions/corrected_checkpoint_evaluations/ds2_off_seed1_20261019T084713Z_e1dfec26/test_predictions_aligned.csv",
+      "csv_sha256": "5b234632e8c60ce31daf8011791b19160b99432862146f21e17d55a6c84f8f14"
+    },
+    {
+      "run": [
+        "ds2",
+        "off",
+        2
+      ],
+      "report": "FULL_RELEASE/04_Evaluation_Predictions/corrected_checkpoint_evaluations/ds2_off_seed2_20261019T084945Z_ee208b5a/metrics_and_provenance.json",
+      "report_sha256": "e63ad21e096744f4da68b944d9283b002877a8cf58a520370508090d7f7cdd28",
+      "csv": "FULL_RELEASE/04_Evaluation_Predictions/corrected_checkpoint_evaluations/ds2_off_seed2_20261019T084945Z_ee208b5a/test_predictions_aligned.csv",
+      "csv_sha256": "0fffeacf91d7cc036c473a62e4e32022c08dbd4e013c8093df9f0c5d25ebb996"
+    },
+    {
+      "run": [
+        "ds2",
+        "off",
+        3
+      ],
+      "report": "FULL_RELEASE/04_Evaluation_Predictions/corrected_checkpoint_evaluations/ds2_off_seed3_20261019T085235Z_4bf521a4/metrics_and_provenance.json",
+      "report_sha256": "7a4f802e58a1417283b4b54dd341aec262577518f3f94e5bae7933d0177251e1",
+      "csv": "FULL_RELEASE/04_Evaluation_Predictions/corrected_checkpoint_evaluations/ds2_off_seed3_20261019T085235Z_4bf521a4/test_predictions_aligned.csv",
+      "csv_sha256": "84459ef6d883ebce0642c6de645ae4eb47eedd602b79ca4ae5b2261ade12997b"
+    },
+    {
+      "run": [
+        "kras",
+        "film",
+        1
+      ],
+      "report": "FULL_RELEASE/04_Evaluation_Predictions/corrected_checkpoint_evaluations/kras_film_seed1_20261019T084148Z_1d0912ef/metrics_and_provenance.json",
+      "report_sha256": "62de9b534581ab35b578892a95de7f579faa7b92653fdea177ce6988509d61d2",
+      "csv": "FULL_RELEASE/04_Evaluation_Predictions/corrected_checkpoint_evaluations/kras_film_seed1_20261019T084148Z_1d0912ef/test_predictions_aligned.csv",
+      "csv_sha256": "ca3efc54a2fa7e34e692a9e390c710ce98a9bf293dddd98bc89661cda60c9a9d"
+    },
+    {
+      "run": [
+        "kras",
+        "off",
+        1
+      ],
+      "report": "FULL_RELEASE/04_Evaluation_Predictions/corrected_checkpoint_evaluations/kras_off_seed1_20261019T081931Z_21d695ea/metrics_and_provenance.json",
+      "report_sha256": "48a50024bf9124b42626db2ac93c5b2fed2b29033dcae69aa5686f76fe5efb06",
+      "csv": "FULL_RELEASE/04_Evaluation_Predictions/corrected_checkpoint_evaluations/kras_off_seed1_20261019T081931Z_21d695ea/test_predictions_aligned.csv",
+      "csv_sha256": "95ab26d741da72f3609b41f8cc7cf43c5cde982e2558ee9580f9fde9d80a7315"
+    }
+  ],
+  "ds2_summary": {
+    "off": {
+      "pearson": {
+        "mean": 0.8215705427545289,
+        "sd": 0.004571838053169879
+      },
+      "rmse": {
+        "mean": 0.7935288617452669,
+        "sd": 0.009590110287342888
+      },
+      "ci": {
+        "mean": 0.817885470947196,
+        "sd": 0.0034433232463697973
+      },
+      "spearman": {
+        "mean": 0.8193087659273252,
+        "sd": 0.005878684065575851
+      }
+    },
+    "film": {
+      "pearson": {
+        "mean": 0.8392603892892095,
+        "sd": 0.002069007777869417
+      },
+      "rmse": {
+        "mean": 0.7648228798147286,
+        "sd": 0.0019186164115010981
+      },
+      "ci": {
+        "mean": 0.8314536600970658,
+        "sd": 0.002648178938843864
+      },
+      "spearman": {
+        "mean": 0.8402445398544421,
+        "sd": 0.0038216602340239284
+      }
+    }
+  },
+  "ds2_paired_test": {
+    "mean_gain": 0.017689846534680642,
+    "sd_gain": 0.0025324594197364838,
+    "p": 0.006762276338709841,
+    "n": 3,
+    "df": 2
+  },
+  "ds2_counts": {
+    "all_rows": 19358,
+    "repeated_pairs_all_splits": 784,
+    "measurements_in_repeated_pairs_all_splits": 1666,
+    "test_repeated_pairs": 11,
+    "test_repeated_pair_rows": 23,
+    "test_rows_with_pair_in_training": 138,
+    "sensitivity_rows": 1778
+  },
+  "ds2_sensitivity": [
+    {
+      "seed": 1,
+      "n": 1778,
+      "off_pearson": 0.8180784671863697,
+      "off_rmse": 0.79496395958282,
+      "film_pearson": 0.8360429953618999,
+      "film_rmse": 0.7661824105319414,
+      "pearson_gain": 0.01796452817553018
+    },
+    {
+      "seed": 2,
+      "n": 1778,
+      "off_pearson": 0.8283472395643511,
+      "off_rmse": 0.7731432585730047,
+      "film_pearson": 0.8418452754043311,
+      "film_rmse": 0.7551535140609889,
+      "pearson_gain": 0.013498035839979994
+    },
+    {
+      "seed": 3,
+      "n": 1778,
+      "off_pearson": 0.8260996242371226,
+      "off_rmse": 0.7806169686889017,
+      "film_pearson": 0.8420669114262863,
+      "film_rmse": 0.7500028283537209,
+      "pearson_gain": 0.015967287189163737
+    }
+  ],
+  "kras_slices": {
+    "multi_assay": {
+      "off": {
+        "n": 9815,
+        "pearson": 0.720815240812793,
+        "spearman": 0.7128285409674918,
+        "rmse": 0.952363178773193,
+        "mae": 0.7482042544982412,
+        "bias": -0.09731190098759111,
+        "ci": 0.761520316698801
+      },
+      "film": {
+        "n": 9815,
+        "pearson": 0.8002045877464489,
+        "spearman": 0.7961589717842814,
+        "rmse": 0.8242949701372976,
+        "mae": 0.6354270972991803,
+        "bias": -0.07178491188006561,
+        "ci": 0.8025555008956193
+      },
+      "pearson_gain": 0.07938934693365585
+    },
+    "single_assay": {
+      "off": {
+        "n": 43533,
+        "pearson": 0.8168435746750699,
+        "spearman": 0.8163515542696193,
+        "rmse": 0.758547125034795,
+        "mae": 0.5864788903855545,
+        "bias": 0.032469121680703227,
+        "ci": 0.8118377618025892
+      },
+      "film": {
+        "n": 43533,
+        "pearson": 0.8233193289525202,
+        "spearman": 0.8215907452334413,
+        "rmse": 0.74685894544439,
+        "mae": 0.5783064689120979,
+        "bias": 0.022992020112927686,
+        "ci": 0.8150407381286273
+      },
+      "pearson_gain": 0.006475754277450396
+    }
+  },
+  "all_30_target_metric_improvements_positive": true,
+  "scope": "Recalculation from existing checkpoints; no training. DS2 features recreated from packaged source and cached ESM-2 weights. Primary per-target inputs retained unchanged."
+}

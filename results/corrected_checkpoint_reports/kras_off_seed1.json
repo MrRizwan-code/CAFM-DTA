@@ -1,0 +1,206 @@
+{
+  "dataset": "kras",
+  "mode": "off",
+  "seed": 1,
+  "probe_only": false,
+  "full_test_rows": 53348,
+  "training_performed": false,
+  "parameter_count": 5871321,
+  "paths": {
+    "test_csv": "FULL_RELEASE/07_Reproducibility/data_splits/kras_unseen/test.csv",
+    "checkpoint": "FULL_RELEASE/08_Audit_Evidence/archived_runs/CRC_UNSEEN/CRC_UNSEEN_OFF/save_model_seed1/model.pt",
+    "configuration": "FULL_RELEASE/08_Audit_Evidence/archived_runs/CRC_UNSEEN/CRC_UNSEEN_OFF/save_model_seed1/config.json",
+    "degrees": "FULL_RELEASE/08_Audit_Evidence/archived_runs/CRC_UNSEEN/CRC_UNSEEN_OFF/save_model_seed1/degree.pt",
+    "condition_maps": "FULL_RELEASE/08_Audit_Evidence/archived_runs/CRC_UNSEEN/CRC_UNSEEN_OFF/condition_maps.json",
+    "training_log": "FULL_RELEASE/08_Audit_Evidence/archived_runs/CRC_UNSEEN/CRC_UNSEEN_OFF/full_result-1.txt",
+    "protein_cache": "FULL_RELEASE/07_Reproducibility/graph_caches/primary_recovered/protein.pt",
+    "ligand_cache": "FULL_RELEASE/07_Reproducibility/graph_caches/primary_recovered/ligand.pt",
+    "exporter_source": "FULL_RELEASE/01_Source_Code/CAFM-DTA/utils/utils.py",
+    "condition_encoder_source": "FULL_RELEASE/01_Source_Code/CAFM-DTA/models/condition_encoder.py",
+    "model_source": "FULL_RELEASE/01_Source_Code/CAFM-DTA/models/net.py",
+    "dataset_source": "FULL_RELEASE/01_Source_Code/CAFM-DTA/utils/dataset.py",
+    "condition_map_source": "FULL_RELEASE/01_Source_Code/CAFM-DTA/utils/condition_map.py"
+  },
+  "input_sha256": {
+    "test_csv": "e5ebfde8bff2b527070950c52941cebc3a4da86fd773165fe731ae626a854218",
+    "checkpoint": "2066c11a311713126d7d99e7b48da08f5ef225ffdd1d1009bfae6a104aa88b54",
+    "configuration": "5aea0bfbcf5c25c550b6d4763b42600918d62bd914242088b67656f29d90d380",
+    "degrees": "7d553231ad6e256e868316f5aa3e0696d7ed6cfe299140b344422fc025275403",
+    "condition_maps": "1545c41782cdb66129bee03fa7a3b859e52457f5f7b2f90d036e293babebd3a0",
+    "training_log": "4bc0dc6aaacf3a87f1914d1cdbef2b87a1be073399c3c085a68d1fbd21478633",
+    "protein_cache": "8b00da57f715dd26a680870443acb47b7ca28e1df841b7f5900c5c9cefcd599c",
+    "ligand_cache": "76e2e6d2648d1491c37e6c3b4326a86e74eff266a45f3b1440d14d87384fd31a",
+    "exporter_source": "8f0c597ae6a6f2b010b19e4347258dc98f3dc315236a0fa4066143c3d115a5ce",
+    "condition_encoder_source": "abdbaf862c971f4d7e06600fd8e164abf47ab6a6167cbc10049f104b22a91e24",
+    "model_source": "b7b8f6509b7f798a36518666614f76759869bc556110c6f1e74b753e5c739414",
+    "dataset_source": "8f224499f53e4e5015830ab752939eecfbd95e64177bf097dab19f313858ad6a",
+    "condition_map_source": "1d29e58d28f7a3069eb7453ff2ab5025c6193c2dade9123cdc96c33d001721e8"
+  },
+  "output_csv": "04_Evaluation_Predictions\\corrected_checkpoint_evaluations\\kras_off_seed1_20261019T081931Z_21d695ea\\test_predictions_aligned.csv",
+  "output_csv_sha256": "95ab26d741da72f3609b41f8cc7cf43c5cde982e2558ee9580f9fde9d80a7315",
+  "overall": {
+    "n": 53348,
+    "pearson": 0.800264845156682,
+    "spearman": 0.8000789473158981,
+    "rmse": 0.7977481261080439,
+    "mae": 0.6162332288568377,
+    "bias": 0.008591924082118296,
+    "ci": 0.8035134287827935
+  },
+  "slices": {
+    "multi_assay": {
+      "n": 9815,
+      "pearson": 0.720815240812793,
+      "spearman": 0.7128285409674918,
+      "rmse": 0.952363178773193,
+      "mae": 0.7482042544982412,
+      "bias": -0.09731190098759111,
+      "ci": 0.761520316698801
+    },
+    "single_assay": {
+      "n": 43533,
+      "pearson": 0.8168435746750699,
+      "spearman": 0.8163515542696193,
+      "rmse": 0.758547125034795,
+      "mae": 0.5864788903855545,
+      "bias": 0.032469121680703227,
+      "ci": 0.8118377618025892
+    }
+  },
+  "per_standard_type": {
+    "AC50": {
+      "n": 50,
+      "pearson": 0.7549141995944548,
+      "spearman": 0.7616233148596973,
+      "rmse": 0.9594743585831645,
+      "mae": 0.7783356906890869,
+      "bias": 0.3351055759429931,
+      "ci": 0.7884297520661157
+    },
+    "EC50": {
+      "n": 3964,
+      "pearson": 0.7206196122251846,
+      "spearman": 0.7194910496600819,
+      "rmse": 0.9151712449991443,
+      "mae": 0.7073368023911831,
+      "bias": 0.02468163275694632,
+      "ci": 0.7642885118018262
+    },
+    "ED50": {
+      "n": 240,
+      "pearson": 0.6717910349894024,
+      "spearman": 0.7072643779402373,
+      "rmse": 1.0228104662741284,
+      "mae": 0.7880954666137695,
+      "bias": -0.5345806646347045,
+      "ci": 0.7632656632831641
+    },
+    "IC50": {
+      "n": 32787,
+      "pearson": 0.8134992186714204,
+      "spearman": 0.8110050062857838,
+      "rmse": 0.7631054295487103,
+      "mae": 0.5919438140278209,
+      "bias": 0.07934744120698571,
+      "ci": 0.8089694246185303
+    },
+    "Kd": {
+      "n": 1898,
+      "pearson": 0.7778016629111812,
+      "spearman": 0.7743754854921614,
+      "rmse": 0.8773798480487084,
+      "mae": 0.6767866373212872,
+      "bias": -0.16338312440476252,
+      "ci": 0.7923078123884963
+    },
+    "Ki": {
+      "n": 14407,
+      "pearson": 0.7699595599652383,
+      "spearman": 0.7578159060185982,
+      "rmse": 0.8238849856816495,
+      "mae": 0.6350590264071545,
+      "bias": -0.1263527854913608,
+      "ci": 0.7838003748975549
+    },
+    "Potency": {
+      "n": 2,
+      "pearson": 1.0,
+      "spearman": 0.9999999999999999,
+      "rmse": 0.48652937092602655,
+      "mae": 0.48462512016296433,
+      "bias": 0.48462512016296433,
+      "ci": 1.0
+    }
+  },
+  "per_target": {
+    "KRAS": {
+      "n": 53348,
+      "pearson": 0.800264845156682,
+      "spearman": 0.8000789473158981,
+      "rmse": 0.7977481261080439,
+      "mae": 0.6162332288568377,
+      "bias": 0.008591924082118296,
+      "ci": 0.8035134287827935
+    }
+  },
+  "historical_log_reference": {
+    "epoch": 5,
+    "validation": {
+      "ci": 0.782,
+      "classification_loss": 0.0,
+      "cluster_loss": -2.8641,
+      "mae": 0.671,
+      "mse": 0.7513,
+      "multiclassification_loss": 0.0,
+      "ortho_loss": 0.0374,
+      "pearson": 0.7588,
+      "regression_loss": 0.7513,
+      "rm2": 0.563,
+      "rmse": 0.8668,
+      "sd": 0.8663,
+      "spearman": 0.7563,
+      "spectral_loss": 0.0
+    },
+    "test": {
+      "ci": 0.8035,
+      "classification_loss": 0.0,
+      "cluster_loss": -2.575,
+      "mae": 0.6162,
+      "mse": 0.6364,
+      "multiclassification_loss": 0.0,
+      "ortho_loss": 2.3426,
+      "pearson": 0.8003,
+      "regression_loss": 0.6365,
+      "rm2": 0.6091,
+      "rmse": 0.7977,
+      "sd": 0.7957,
+      "spearman": 0.8001,
+      "spectral_loss": 0.0
+    },
+    "qualification": "Selected from the historical log, not independently read from checkpoint metadata."
+  },
+  "comparison_with_rounded_log": {
+    "pearson": {
+      "regenerated_minus_logged": -3.515484331806373e-05,
+      "tolerance": 0.0001,
+      "within_tolerance": true
+    },
+    "rmse": {
+      "regenerated_minus_logged": 4.812610804394435e-05,
+      "tolerance": 0.0001,
+      "within_tolerance": true
+    }
+  },
+  "requires_review": false,
+  "inference_seconds": 1155.0840416001156,
+  "measurements_per_second": 46.18538398824907,
+  "environment": {
+    "python": "3.12.14",
+    "platform": "Windows-11-10.0.22621-SP0",
+    "torch": "2.8.0+cpu",
+    "torch_geometric": "2.8.0.post1",
+    "device": "cpu",
+    "cpu_threads": 4
+  },
+  "qualification": "Reported checkpoint inference only. No new seed, checkpoint selection or training."
+}

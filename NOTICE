@@ -33,3 +33,7 @@ FILES REMOVED FROM THE ORIGINAL PSICHIC RELEASE
                        from the upstream PSICHIC repository)
 
 All other files are unmodified from the original PSICHIC release.
+
+Staged revision 2026-10-20: recovered simple_concat; corrected row-aligned exporter;
+added portable checkpoint evaluator; synchronized Figures 6/S2 and documentation.
+See docs/REVISION_NOTES.md. No new experimental results claimed.
