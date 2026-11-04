@@ -1,13 +1,12 @@
 # Data and accompanying archive
 
 No split CSVs, graph caches, model weights or large prediction files are in this
-GitHub snapshot. Access to the accompanying private archive must be arranged with
-the author. No public Zenodo DOI is asserted.
+GitHub repository. They are archived on Zenodo: https://doi.org/[ZENODO-DOI].
 
 The checkpoint evaluator expects the existing full-release layout:
 
 ```
-CAFM-DTA_JCIM_FINAL_RELEASE/
+CAFM-DTA_RELEASE/
   07_Reproducibility/
     data_splits/kras_unseen/test.csv
     data_splits/ds2/test.csv

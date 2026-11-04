@@ -3,7 +3,7 @@
 # CAFM-DTA · Figure 2 — Primary-split ablation (off / concat / film)
 # FINAL. Real per-seed points overlaid (matches PSICHIC convention),
 # mean dots + SD error bars + progression trend line, hero (film) emphasized.
-# JCIM: Arial, >=4.5 pt, >=0.5 pt lines, <=7 in wide, Okabe-Ito palette.
+# Figure specification: Arial, >=4.5 pt, >=0.5 pt lines, <=7 in wide, Okabe-Ito palette.
 # Outputs: fig2_primary_ablation.pdf (vector) + .png (600 dpi)
 #
 # Reproducible on CPU:  pip install numpy matplotlib

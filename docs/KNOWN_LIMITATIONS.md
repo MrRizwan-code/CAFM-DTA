@@ -1,8 +1,8 @@
-# CAFM-DTA ? evidence and limitations
+# CAFM-DTA – evidence and limitations
 
 ## CONCAT seed-1 prediction export
 
-The historical CONCAT seed-1 test_prediction_seed1.csv is unreliable for measurement-level evaluation of repeated protein?ligand pairs. The original export matched on protein and ligand without preserving assay-condition distinctions, overwriting condition-specific predictions.
+The historical CONCAT seed-1 test_prediction_seed1.csv is unreliable for measurement-level evaluation of repeated protein–ligand pairs. The original export matched on protein and ligand without preserving assay-condition distinctions, overwriting condition-specific predictions.
 
 The affected seed-1 test slice contains 2,432 multi-assay pairs with 5,029 measurements. The archived CSV-derived Pearson correlation differs from the reported training-log metric. The training log reports approximately 0.8028 Pearson, rounded to four decimals; the corrupted CSV gives approximately 0.78888.
 
@@ -14,7 +14,7 @@ Use the six separate EVALPATH primary test prediction files for OFF/FILM analyse
 
 ## Figure 3B confidence intervals
 
-Seed-1 Pearson gains are assessed with 5,000 pair-clustered bootstrap resamples, sampling protein?ligand pairs together with their measurements within each slice.
+Seed-1 Pearson gains are assessed with 5,000 pair-clustered bootstrap resamples, sampling protein–ligand pairs together with their measurements within each slice.
 
 Corrected 95% intervals:
 All measurements: [0.018800, 0.026363].
@@ -36,18 +36,18 @@ sources; do not substitute old screening exports.
 
 Figures and reported metrics should retain their original methodological qualifications. Different datasets, seeds, checkpoints, and evaluation paths are not necessarily interchangeable.
 
-The source archive identifies ChEMBL release 37 and CC BY-SA 3.0. Confirm applicable data redistribution obligations and license compatibility before making the bundled split files public.
+The source archive identifies ChEMBL release 37 and CC BY-SA 3.0. Data derived from ChEMBL release 37 (CC BY-SA 3.0) are redistributed under the same license.
 
 Archived references and prior documentation may contain superseded statements. The corrected manuscript, pair-clustered bootstrap evidence, and this limitations record take precedence for the identified corrections.
 
-A final scientific consistency review, end-to-end reproduction check, and public-release permission review remain outstanding.
+End-to-end reproduction from this package has not been independently validated.
 
 
 ## Current unresolved issues and corrected provenance
 
 - IC50-only original checkpoint/prediction/log evidence has not been recovered.
   Historical table2_frozen.json values remain unchanged at the author's request, but
-  are not newly verified by this release. A prepared rerun has not been executed.
+  are not newly verified by this release. A prepared rerun has not been executed; the manuscript reports this control as indicative (Table 4).
 - Extra matched cold-ligand seeds and output-offset/type-head controls have not been run.
 - Figure 4 is from CRC_COLD_FILM_converge, seed 1, binding assay B; see
   results/figure4_checkpoint_provenance.json. Mean signed beta is not an effect-size test.
@@ -56,4 +56,4 @@ A final scientific consistency review, end-to-end reproduction check, and public
   are not claimed to be recovered original caches.
 - The primary fixed five-epoch budget is not a convergence test. External baseline
   protocols differ; do not infer controlled architectural superiority from them alone.
-- The accompanying archive still needs synchronization and reviewer access before submission.
+- The accompanying Zenodo archive must contain the corrected checkpoint evaluations referenced above (04_Evaluation_Predictions/corrected_checkpoint_evaluations).

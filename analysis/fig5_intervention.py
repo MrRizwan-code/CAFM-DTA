@@ -1,5 +1,5 @@
 """
-Figure 5 — Interventional control (CAFM-DTA manuscript, JCIM).
+Figure 5 — Interventional control (CAFM-DTA manuscript).
 Same design as the original figure (dots, dashed identity line, terracotta),
 with only the required changes:
   1) within-pair read-out added (filled circles, headline; slope 1.05)

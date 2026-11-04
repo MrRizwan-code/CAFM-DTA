@@ -8,7 +8,7 @@
     "rmse": 0.8241600302230025,
     "mae": 0.6366298301817042,
     "spearman": 0.7816827282421119,
-    "source": "C:\\Users\\Muhammad Rizwan\\Desktop\\CFAM\\zenodo_package\\predictions_evalpath\\primary_seed1\\OFF_test_prediction_EVALPATH_seed1.csv"
+    "source": "zenodo_package\\predictions_evalpath\\primary_seed1\\OFF_test_prediction_EVALPATH_seed1.csv"
   },
   {
     "model": "OFF",
@@ -19,7 +19,7 @@
     "rmse": 0.8156527445537719,
     "mae": 0.6242174297387787,
     "spearman": 0.7869522496011763,
-    "source": "C:\\Users\\Muhammad Rizwan\\Desktop\\CFAM\\zenodo_package\\predictions_evalpath\\primary_seed2\\OFF_test_prediction_EVALPATH_seed2.csv"
+    "source": "zenodo_package\\predictions_evalpath\\primary_seed2\\OFF_test_prediction_EVALPATH_seed2.csv"
   },
   {
     "model": "OFF",
@@ -30,7 +30,7 @@
     "rmse": 0.8079889954027033,
     "mae": 0.616081043706623,
     "spearman": 0.7927604543331831,
-    "source": "C:\\Users\\Muhammad Rizwan\\Desktop\\CFAM\\zenodo_package\\predictions_evalpath\\primary_seed3\\OFF_test_prediction_EVALPATH_seed3.csv"
+    "source": "zenodo_package\\predictions_evalpath\\primary_seed3\\OFF_test_prediction_EVALPATH_seed3.csv"
   },
   {
     "model": "FILM",
@@ -41,7 +41,7 @@
     "rmse": 0.7990632268884449,
     "mae": 0.6158730187981727,
     "spearman": 0.8048428783669416,
-    "source": "C:\\Users\\Muhammad Rizwan\\Desktop\\CFAM\\zenodo_package\\predictions_evalpath\\primary_seed1\\FILM_test_prediction_EVALPATH_seed1.csv"
+    "source": "zenodo_package\\predictions_evalpath\\primary_seed1\\FILM_test_prediction_EVALPATH_seed1.csv"
   },
   {
     "model": "FILM",
@@ -52,7 +52,7 @@
     "rmse": 0.7679084271903774,
     "mae": 0.5897163729048234,
     "spearman": 0.8150156900111293,
-    "source": "C:\\Users\\Muhammad Rizwan\\Desktop\\CFAM\\zenodo_package\\predictions_evalpath\\primary_seed2\\FILM_test_prediction_EVALPATH_seed2.csv"
+    "source": "zenodo_package\\predictions_evalpath\\primary_seed2\\FILM_test_prediction_EVALPATH_seed2.csv"
   },
   {
     "model": "FILM",
@@ -63,7 +63,7 @@
     "rmse": 0.7797042753766711,
     "mae": 0.5973748492414467,
     "spearman": 0.8166992579759504,
-    "source": "C:\\Users\\Muhammad Rizwan\\Desktop\\CFAM\\zenodo_package\\predictions_evalpath\\primary_seed3\\FILM_test_prediction_EVALPATH_seed3.csv"
+    "source": "zenodo_package\\predictions_evalpath\\primary_seed3\\FILM_test_prediction_EVALPATH_seed3.csv"
   },
   {
     "model": "simple_concat",
@@ -74,7 +74,7 @@
     "rmse": 0.8461446281262247,
     "mae": 0.6537863868203536,
     "spearman": 0.7676538295304717,
-    "source": "C:\\Users\\Muhammad Rizwan\\Desktop\\SIMPLE_CONCAT_seed1_5ep_backup.tar.gz :: SIMPLE_CONCAT_seed1_5ep/test_prediction_seed1.csv"
+    "source": "SIMPLE_CONCAT_seed1_5ep_backup.tar.gz :: SIMPLE_CONCAT_seed1_5ep/test_prediction_seed1.csv"
   },
   {
     "model": "CONCAT",
@@ -85,7 +85,7 @@
     "rmse": 0.8100644420938103,
     "mae": 0.6263685776933003,
     "spearman": 0.7964511559448946,
-    "source": "C:\\Users\\Muhammad Rizwan\\Desktop\\CFAM\\output\\02_concat_ablation\\CONCAT_seed3_5ep_backup.tar.gz :: output/CONCAT_seed3_5ep/test_prediction_seed3.csv"
+    "source": "output\\02_concat_ablation\\CONCAT_seed3_5ep_backup.tar.gz :: output/CONCAT_seed3_5ep/test_prediction_seed3.csv"
   },
   {
     "model": "FILM",
@@ -96,7 +96,7 @@
     "rmse": 0.8695118170103047,
     "mae": 0.6475421333368179,
     "spearman": 0.7576786628171382,
-    "source": "C:\\Users\\Muhammad Rizwan\\Desktop\\CFAM\\output\\01_cold_ligand\\evaluation_results\\test_row_aligned_predictions.csv"
+    "source": "output\\01_cold_ligand\\evaluation_results\\test_row_aligned_predictions.csv"
   },
   {
     "model": "OFF",
@@ -107,7 +107,7 @@
     "rmse": 0.9183863072633743,
     "mae": 0.6914554344902083,
     "spearman": 0.7228569272835115,
-    "source": "C:\\Users\\Muhammad Rizwan\\Desktop\\CFAM\\output\\01_cold_ligand\\OFF_seed1_15ep\\test_prediction_seed1.csv"
+    "source": "output\\01_cold_ligand\\OFF_seed1_15ep\\test_prediction_seed1.csv"
   },
   {
     "model": "CONCAT_old_export_DIAGNOSTIC_ONLY",
@@ -118,6 +118,6 @@
     "rmse": 0.82513777380667,
     "mae": 0.633154959777491,
     "spearman": 0.7886280165182705,
-    "source": "C:\\Users\\Muhammad Rizwan\\Desktop\\CFAM\\zenodo_package\\runs\\CRC_CONCAT\\CRC_CONCAT\\test_prediction_seed1.csv"
+    "source": "zenodo_package\\runs\\CRC_CONCAT\\CRC_CONCAT\\test_prediction_seed1.csv"
   }
 ]

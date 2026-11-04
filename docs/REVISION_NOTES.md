@@ -8,7 +8,7 @@ This revision synchronizes existing verified corrections; it adds no new scienti
 - Corrected Figure 6/S2 images, previews, per-target values, summaries and generators.
 - Legacy Figure 6/S2 entry points now delegate; prepare_data validates rather than overwrites
   corrected inputs with old screening-path data.
-- Documentation now describes actual GitHub contents, archive layout, pending IC50 evidence,
+- Documentation now describes actual GitHub contents, archive layout, the unrecovered IC50-only evidence,
   and Figure 4 checkpoint attribution.
 
 Unchanged: model backbone, training loop, primary/cold verified result values, external baseline
