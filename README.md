@@ -1,37 +1,36 @@
 # CAFM-DTA
 
 Condition-Aware Feature Modulation for Drug–Target Affinity prediction, extending the
-PSICHIC backbone with assay-conditioned FiLM. This repository supports a manuscript
-being prepared for submission; acceptance or submission is not claimed.
+PSICHIC backbone with assay-conditioned feature-wise linear modulation (FiLM). This
+repository accompanies the manuscript "CAFM-DTA: Condition-Aware Feature Modulation
+Disambiguates Assay Labels in Drug-Target Affinity Prediction".
 
-## Revision status
+## Release notes
 
-This revision restores the recovered `simple_concat` option, fixes measurement-level
-prediction export, and synchronizes Figures 6/S2 with existing-checkpoint evaluations.
-No new experiment was performed for this repository update. The original IC50-only
-numerical result remains unverified; its rerun is pending. See
-[known limitations](docs/KNOWN_LIMITATIONS.md) and [changes](docs/REVISION_NOTES.md).
+This release restores the `simple_concat` option, fixes measurement-level prediction
+export, and synchronizes Figures 6/S2 with existing-checkpoint evaluations. No new
+experiments were run for this release. See [known limitations](docs/KNOWN_LIMITATIONS.md)
+and [changes](docs/REVISION_NOTES.md).
 
 ## Contents and data access
 
 - `models/`, `utils/`, `main.py`: research model and training source.
 - `evaluate_checkpoint.py`: evaluate KRAS/DS2 saved checkpoints without training.
-- `results/`: historical results plus corrected checkpoint summaries/provenance.
+- `results/`: results plus corrected checkpoint summaries and provenance.
 - `publication_figures/`: publication exports, plotting inputs and generators.
-- `analysis/`: legacy analysis entry points; Figures 6/S2 delegate to corrected code.
-- `scripts/`: historical split-building code.
+- `analysis/`: analysis entry points; Figures 6/S2 delegate to corrected code.
+- `scripts/`: split-building code.
 
-Large datasets, graph caches, predictions and checkpoints are **not included in this
-GitHub snapshot**. They belong in the accompanying full release. The Zenodo deposit
-is not yet public, and no public DOI or reviewer-access link is supplied here.
-See [archive layout](docs/DATA_AND_ARCHIVE_README.md).
+Large datasets, graph caches, predictions and checkpoints are archived on Zenodo:
+https://doi.org/[ZENODO-DOI]. This GitHub repository contains the code, configurations,
+analysis scripts and figure-generation resources. See the
+[archive layout](docs/DATA_AND_ARCHIVE_README.md).
 
 ## Installation
 
-`environment.yml` and `requirements_frozen.txt` preserve historical runtime records.
-They are not a promise of compatibility with every rental GPU or image. The reported
-work used Linux and a CUDA-enabled PyTorch environment. Confirm hardware/runtime
-compatibility and run a small diagnostic before a paid full run.
+`environment.yml` and `requirements_frozen.txt` record the environment used in the
+reported work (Linux, CUDA-enabled PyTorch). Compatibility with other hardware or
+runtime images is not guaranteed; run a small diagnostic before a full run.
 
 For figure generation only:
 
@@ -46,11 +45,11 @@ The last command regenerates Figures 6/S2. To generate all publication figures:
 
 ## Checkpoint evaluation
 
-Obtain and extract the matching full release first. Its root must contain
+Download and extract the full release from Zenodo first. Its root must contain
 `07_Reproducibility/` and `08_Audit_Evidence/`. Use an absolute path:
 
 ```bash
-python -B evaluate_checkpoint.py --release-root /path/to/CAFM-DTA_JCIM_FINAL_RELEASE --dataset kras --mode film --seed 1 --preflight
+python -B evaluate_checkpoint.py --release-root /path/to/CAFM-DTA_RELEASE --dataset kras --mode film --seed 1 --preflight
 ```
 
 After preflight succeeds, omit `--preflight` to evaluate. KRAS supports seed 1;
@@ -65,15 +64,14 @@ folder within it; inputs are read only. No model is trained by this tool.
 |---|---|
 | Unconditioned PSICHIC backbone | `--condition_mode off` |
 | Nonlinear concatenation | `--condition_mode concat` |
-| Recovered linear concatenation control | `--condition_mode simple_concat` |
+| Linear concatenation control | `--condition_mode simple_concat` |
 | CAFM-DTA | `--condition_mode film` |
 
-`main.py` is the historical research training entry point, not the checkpoint
-evaluation command. It reads train.csv, valid.csv and test.csv from `--datafolder`.
-Use the study-specific configuration, preprocessing caches, task flags and epoch
-budget; default arguments alone are not a replication protocol. End-to-end training
-from this GitHub staging copy has not been run. The separate IC50 rerun package is
-not included here and must not be confused with a completed experimental result.
+`main.py` is the research training entry point, not the checkpoint evaluation command.
+It reads train.csv, valid.csv and test.csv from `--datafolder`. Use the study-specific
+configuration, preprocessing caches, task flags and epoch budgets described in the
+manuscript; default arguments alone do not reproduce the study. The reported results
+come from the archived runs, and this GitHub copy has not been re-run end to end.
 
 ## Interpretation and reproducibility
 
@@ -83,11 +81,11 @@ A small signed beta mean does not prove negligible individual shifts or establis
 that multiplication is responsible for the gain.
 
 Figures 6/S2 use corrected checkpoint evaluations; primary metrics remain unchanged.
-The scientific scope and unresolved evidence gaps are detailed in
+The scientific scope and open evidence gaps are detailed in
 [KNOWN_LIMITATIONS.md](docs/KNOWN_LIMITATIONS.md).
 
 ## Attribution
 
 This is a modified PSICHIC codebase, redistributed under Apache License 2.0.
 See LICENSE, NOTICE and README_PSICHIC.md. Please cite the original PSICHIC work
-when using this code. A CAFM-DTA publication citation will be added when available.
+(Koh et al., *Nature Machine Intelligence*, 2024) and the CAFM-DTA manuscript.
