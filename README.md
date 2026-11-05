@@ -22,7 +22,7 @@ and [changes](docs/REVISION_NOTES.md).
 - `scripts/`: split-building code.
 
 Large datasets, graph caches, predictions and checkpoints are archived on Zenodo:
-https://doi.org/[ZENODO-DOI]. This GitHub repository contains the code, configurations,
+https://doi.org/10.5281/zenodo.23343132. This GitHub repository contains the code, configurations,
 analysis scripts and figure-generation resources. See the
 [archive layout](docs/DATA_AND_ARCHIVE_README.md).
 
@@ -45,7 +45,7 @@ The last command regenerates Figures 6/S2. To generate all publication figures:
 
 ## Checkpoint evaluation
 
-Download and extract the full release from Zenodo first. Its root must contain
+Download the full release from Zenodo first (three zip files, part1_of_3 to part3_of_3; extract all three into the same folder to obtain CAFM-DTA_RELEASE). Its root must contain
 `07_Reproducibility/` and `08_Audit_Evidence/`. Use an absolute path:
 
 ```bash
