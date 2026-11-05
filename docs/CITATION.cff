@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the CAFM-DTA manuscript and the original PSICHIC work."
+title: "CAFM-DTA: Condition-Aware Feature Modulation for Drug-Target Affinity Prediction"
+type: software
+license: Apache-2.0
+repository-code: "https://github.com/MrRizwan-code/CAFM-DTA"
+authors:
+  - family-names: "Rizwan"
+    given-names: "Muhammad"
+  - family-names: "Imran"
+    given-names: "Muhammad"
+  - family-names: "Ali"
+    given-names: "Waqar"
+  - family-names: "Farooq"
+    given-names: "Adil"
+  - family-names: "Jan"
+    given-names: "Syed Mansoor"
+  - family-names: "Abbas"
+    given-names: "Munawar"
+  - family-names: "Wei"
+    given-names: "Dongqing"
+doi: "10.5281/zenodo.23343132"
